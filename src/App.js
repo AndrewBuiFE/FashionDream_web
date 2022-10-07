@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./global.scss";
 import TestComponent from "./test/TestComponent";
 function App() {
   return (

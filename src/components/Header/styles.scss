@@ -1,8 +1,68 @@
+@mixin contact {
+  display: flex;
+  flex-direction: row;
+}
 .headerBackground {
   background-color: #252b42;
-  gap: 60px;
   padding: 0px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 58px;
 }
 .text {
   color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0;
+  background-color: green;
+}
+.traditionalContact {
+  @include contact;
+  flex: 4;
+}
+.socialContact {
+  @include contact;
+  flex: 3;
+  align-items: center;
+  background-color: blue;
+}
+.followUs {
+  display: flex;
+  flex: 3;
+  background-color: red;
+  align-items: center;
+}
+.media {
+  @include contact();
+  list-style-type: none;
+  background-color: red;
+}
+.mediaBox {
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  // background-color: red;
+}
+.mediaContainer {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+.phone {
+  @include contact;
+  span {
+    margin-left: 5px;
+  }
+  // background-color: yellow;
+}
+.mail {
+  @include contact;
+  margin-left: 10px;
+  span {
+    margin-left: 5px;
+  }
 }

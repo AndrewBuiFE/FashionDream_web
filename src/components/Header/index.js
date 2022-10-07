@@ -2,46 +2,48 @@ import { AppIcons } from "../../general/constants/AppResource";
 import "./styles.scss";
 const Header = () => {
   return (
-    <div class="d-flex flex-row justify-content-between align-items-start headerBackground ">
-      <div className="d-flex flex-row align-items-center col-md-4 col">
-        <div className="d-flex flex-row align-items-center">
+    <div className="headerBackground">
+      <div className="traditionalContact">
+        <div className="phone">
           <img src={AppIcons.phone} alt="" />
-          <p className="text font-weight-bolder">(225) 555-0118</p>
+          <span className="text">(225) 555-0118</span>
         </div>
-        <div className="d-flex flex-row align-items-center">
-          <img scr={AppIcons.mail} alt="" />
-          <p className="text font-weight-bolder">michelle.rivera@example.com</p>
+        <div className="mail">
+          <img src={AppIcons.mail} alt={AppIcons.facebook} />
+          <span className="text">michelle.rivera@example.com</span>
         </div>
       </div>
-      <div className="text-center col-md-4">
-        <p className="text font-weight-bolder">
-          Follow Us and get a chance to win 80% off
-        </p>
+      <div className="followUs">
+        <p className="text">Follow Us and get a chance to win 80% off</p>
       </div>
-      <div className="d-flex flex-row align-items-center col-md-4">
-        <p className="text font-weight-bolder">Follow Us:</p>
-        <ul className="d-flex flex-row align-items-center list-unstyled">
-          <li>
-            <a href="">
-              <img src={AppIcons.instagram} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src={AppIcons.youtube} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src={AppIcons.facebook} alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src={AppIcons.twitter} alt="" />
-            </a>
-          </li>
-        </ul>
+      <div className="socialContact">
+        <div>
+          <p className="text">Follow Us:</p>
+        </div>
+        <div className="mediaContainer">
+          <ul className="media">
+            <li className="mediaBox">
+              <a href="#">
+                <img src={AppIcons.instagram} alt="" />
+              </a>
+            </li>
+            <li className="mediaBox">
+              <a href="#">
+                <img src={AppIcons.youtube} alt="" />
+              </a>
+            </li>
+            <li className="mediaBox">
+              <a href="#">
+                <img src={AppIcons.facebook} alt="" />
+              </a>
+            </li>
+            <li className="mediaBox">
+              <a href="#">
+                <img src={AppIcons.twitter} alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

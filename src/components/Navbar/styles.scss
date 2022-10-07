@@ -1,0 +1,83 @@
+@import "../../variable";
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  // background-color: red;
+  align-items: center;
+  height: 58px;
+  justify-content: space-between;
+  .navLinkSection {
+    display: flex;
+    flex-direction: row;
+    ul {
+      list-style-type: none;
+      margin: 0px 40px 0px;
+      padding: 0px;
+      li {
+        display: inline-block;
+
+        a {
+          text-decoration: none;
+          color: #737373;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+        }
+      }
+      li:not(:first-child) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .navActionSection {
+    display: flex;
+    flex-direction: row;
+    // background-color: green;
+    margin-right: 16px;
+    align-items: center;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      width: 56px;
+      span {
+        color: #23a6f0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        margin-left: 5px;
+      }
+    }
+
+    a:first-child {
+      margin-right: 15px;
+      width: auto;
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.navText {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  color: #252b42;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin-left: 38px;
+}
